@@ -1,0 +1,173 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"app-plus":{
+					//导航栏配置		
+					"titleNView":{
+						// 搜索框
+						"searchInput":{
+							"align":"center",
+							"backgroundColor":"#F5F4F2",
+							"borderRadius":"4px",
+							"disabled":true,
+							"placeholder":"搜索帖子",
+							"placeholderColor":"#6D6C67"
+						},
+						"buttons":[
+							{
+								"color":"#333333",
+								"colorPressed":"#FD597C",
+								"float":"right",
+								"fontSize":"20px",
+								"fontSrc":"/static/font/icon.ttf",
+								"text":"\ue668"
+								
+				
+							}
+						]
+					}
+				}
+			}
+		}
+	    ,{
+            "path" : "pages/news/news",
+            "style" : {
+				"app-plus":{
+					"titleNView":false 
+				}
+			}
+        }
+        ,{
+            "path" : "pages/msg/msg",
+            "style" : {
+				"navigationBarTitleText":"消息",
+				"enablePullDownRefresh":true,
+				"app-plus":{
+					"titleNView":{
+						"buttons":[
+						{
+							"color":"#333333",
+							"colorPressed":"#FD597C",
+							"float":"left",
+							"fontSize":"20px",
+							"fontSrc":"/static/font/icon.ttf",
+							"text":"\ue611"			
+						},
+						{
+							"color":"#333333",
+							"colorPressed":"#FD597C",
+							"float":"right",
+							"fontSize":"20px",
+							"fontSrc":"/static/font/icon.ttf",
+							"text":"\ue649"			
+						}
+						]
+					}
+				}
+							}
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" : {
+				"app-plus":{
+					//导航栏配置		
+					"titleNView":{
+						// 搜索框
+						"searchInput":{
+							"align":"center",
+							"backgroundColor":"#F5F4F2",
+							"borderRadius":"4px",
+							// "disabled":true,
+							"placeholder":"搜索帖子",
+							"placeholderColor":"#6D6C67"
+						},
+						"buttons":[
+							{
+								"color":"#333333",
+								"colorPressed":"#FD597C",
+								"float":"right",
+								"fontSize":"16px",
+								"text":"搜索"
+								
+				
+							}
+						]
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/ad-info/ad-info",
+            "style" : {
+				"app-plus":{
+					"titleNView":false
+				}
+			}
+        }
+        ,{
+            "path" : "pages/topic-nav/topic-nav",
+            "style" : {
+				"navigationBarTitleText":"话题分类"
+			}
+        }
+        ,{
+            "path" : "pages/topic-detail/topic-detail",
+            "style" : {
+				"app-plus":{
+					"titleNView":{
+						"type":"transparent",
+						"buttons":[
+							{
+								"type":"menu"
+							}
+						]
+					}
+				}
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",  //导航栏的标题颜色
+		"navigationBarTitleText": "社区交友",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+"tabBar": {
+	"color": "#323232",
+	"selectedColor": "#ED6384",
+	"borderStyle": "black",
+	"backgroundColor": "#FFFFFF",
+	"list": [
+		{
+		"pagePath": "pages/index/index",
+		"iconPath": "static/tabbar/index.png",
+		"selectedIconPath": "static/tabbar/indexed.png",
+		"text": "首页"
+	},
+	{
+		"pagePath": "pages/news/news",
+		"iconPath": "static/tabbar/news.png",
+		"selectedIconPath": "static/tabbar/newsed.png",
+		"text": "动态"
+	},
+	{
+		"pagePath": "pages/msg/msg",
+		"iconPath": "static/tabbar/paper.png",
+		"selectedIconPath": "static/tabbar/papered.png",
+		"text": "消息"
+	},
+	{
+		"pagePath": "pages/my/my",
+		"iconPath": "static/tabbar/home.png",
+		"selectedIconPath": "static/tabbar/homeed.png",
+		"text": "我的"
+	}
+	]
+}
+}
